@@ -7,6 +7,8 @@ function Navbar() {
   return (
     <div className='flex fixed left-0 right-0 z-50 w-full justify-between pl-3 pr-3  items-center bg-neutral-50 py-4.5 border-b-[2px] border-neutral-200  '>
       <div className='font-extralight  text-2xl tracking-tighter cursor-pointer'>Freelance <span className='italic font-medium'>site</span></div>
+
+      {/* for large device */}
       <div className=' flex  max-sm:hidden justify-between  max-w-[234px] w-full py-1.5 px-2 tracking-tight'>
         <ul>
           <a href="" className='flex items-center gap-x-1 hover:scale-105 duration-75 text-text hover:text-black transition-colors  font-medium text-[15px] ' >
@@ -29,6 +31,8 @@ function Navbar() {
         <div><HiArrowLongRight /></div>
       </div>
 
+
+      {/* For Small Device */}
       <button className="sm:hidden text-2xl pr-0.5 cursor-pointer hover:scale-110 duration-150" onClick={() => setIsOpen(!isOpen)
       }>
         ☰
