@@ -1,13 +1,16 @@
 
 import './App.css'
+import Hero from './components/Hero';
 import Navbar from './components/navbar';
+
 function App() {
 
 
   return (
-    <div className='font-poppins'>
+    <div className='font-poppins flex w-full min-h-screen flex-col items-center'>
      
       <Navbar/>
+      <Hero/>
     </div>
   )
 }
